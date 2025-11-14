@@ -37,7 +37,17 @@
         {{{body}}}
     </div>
 
-    
+    <footer class="gh-foot gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            
+            <nav class="gh-foot-menu">
+                {{navigation type="secondary"}}
+            </nav>
+            <div class="gh-copyright">
+                {{@site.title}} © {{date format="YYYY"}}. Powered by <a href="https://t.me/lesssummer/" target="_blank" rel="noopener">Less Summer</a>
+            </div>
+        </div>
+    </footer>
 
     {{^is "post, page"}}
         {{> "player"}}
