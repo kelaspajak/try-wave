@@ -20,3 +20,27 @@
     margin-bottom: 16px;
     font-size: 1.3rem;
 }
+
+/* https://github.com/TryGhost/Dawn/ assets/css/blog/single.css */
+.single-cta {
+    padding: 3rem;
+    margin-top: 4rem !important;
+    text-align: center;
+    border-top: 5px solid var(--brand-color);
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.single-cta-title {
+    margin: 0 0 3rem !important;
+}
+
+.single-cta-button {
+    margin-bottom: 1rem;
+    font-weight: 800 !important;
+}
+
+.single-cta-footer {
+    font-size: 1.4rem;
+    font-weight: 400 !important;
+    letter-spacing: -0.02rem;
+}
