@@ -1,4 +1,4 @@
-{{!< default}}
+{{!< default-author}}
 
 <div class="gh-outer">
 <main class="site-main gh-inner">
@@ -8,12 +8,13 @@
             {{> "author-box"}}
         </div>
     {{/author}}
-
+{{#get "posts" filter="primary_tag:layanan" include="tags,authors" as |posts|}}
     <div class="post-feed gh-feed">
         {{#foreach posts}}
             {{> "loop"}}
         {{/foreach}}
     </div>
+{{/get}}
 
 </main>
 </div>
