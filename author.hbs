@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const sortedTags = Array.from(tags).sort();
         sortedTags.forEach(tag => {
             const listItem = document.createElement('li');
-            listItem.innerHTML = `<button class="tab-button" data-tag="${tag}">${tag.replace(/-/g, ' ')}</button>`;
+            listItem.innerHTML = `<button class="tab-button" data-tag="${tag}" {{#if primary_tag.accent_color}} style="--tag-color: {{primary_tag.accent_color}};"{{/if}}>${tag.replace(/-/g, ' ')}</button>`;
             tabsList.appendChild(listItem);
         });
 
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
         padding: 8px 16px;
         border: 1px solid #ddd;
         border-radius: 20px;
-        background-color: #f9f9f9;
+        background-color: var(--tag-color);
         cursor: pointer;
         text-transform: capitalize;
         font-size: 1.4rem;
