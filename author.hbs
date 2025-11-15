@@ -7,17 +7,13 @@
         <div class="term">
             {{> "author-box"}}
         </div>
-
-        {{#get "posts" filter="primary_tag:layanan+authors.slug:{{slug}}" include="tags,authors" as |posts|}}
-            {{#if posts}}
-                <div class="post-feed gh-feed">
-                    {{#foreach posts}}
-                        {{> "loop"}}
-                    {{/foreach}}
-                </div>
-            {{/if}}
-        {{/get}}
     {{/author}}
+
+    <div class="post-feed gh-feed">
+    {{#foreach posts}}
+        {{> "loop"}}
+    {{/foreach}}
+    </div>
 
 </main>
 </div>
