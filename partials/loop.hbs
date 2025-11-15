@@ -1,4 +1,4 @@
-<article class="{{post_class}}" data-url="{{og_description}}" data-id="{{comment_id}}">
+<article class="{{post_class}}" data-tags="{{#foreach tags}}{{slug}} {{/foreach}}" data-url="{{og_description}}" data-id="{{comment_id}}">
     <div class="post-media">
         {{#if og_description}}
             <div class="post-play js-play">
