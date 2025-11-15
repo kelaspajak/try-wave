@@ -84,6 +84,9 @@
             
             <nav class="gh-foot-menu">
                 {{navigation type="secondary"}}
+                {{#if @custom.rss_link}}
+                    <a class="gh-foot-link" href="{{@custom.rss_link}}" target="_blank" rel="noopener">RSS</a>
+                {{/if}}
             </nav>
             <div class="gh-copyright">
                 {{@site.title}} © {{date format="YYYY"}}. Powered by <a href="https://t.me/lesssummer/" target="_blank" rel="noopener">Less Summer</a>
