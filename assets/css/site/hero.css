@@ -19,7 +19,7 @@
     .hero-title {
         background-image: radial-gradient(
             circle at 0.4px 0.2px,
-            #fff 1px,
+            var(--color-white) 1px,
             transparent 0
         );
         background-size: 5px 5px;
@@ -31,7 +31,7 @@
     .hero-title {
         background-image: radial-gradient(
             circle at 0.4px 0.2px,
-            #000 1px,
+            var(--black-color) 1px,
             transparent 0
         );
         background-size: 5px 5px;
