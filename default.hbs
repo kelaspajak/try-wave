@@ -63,7 +63,15 @@
                         {{/unless}}
                     </div>
                 {{/unless}}
+
+                {{!-- theme --}}
+                <div class="inline-block w-10">
+                    <span data-toggle-theme="dark" data-act-class="pl-4" class="theme-button">
+                        {{> "icons/color-filter"}}                        
+                    </span>
+                </div>
             </div>
+            
         </div>
     </header>
 
@@ -92,6 +100,10 @@
                 {{@site.title}} © {{date format="YYYY"}}. Powered by <a href="https://t.me/lesssummer/" target="_blank" rel="noopener">Less Summer</a>
             </div>
         </div>
+
+        <div class="m-5">
+	
+</div>
     </footer>
 
 </div>
@@ -101,6 +113,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
 </script>
+<script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 <script src="{{asset "built/main.min.js"}}"></script>
 
 {{{block "scripts"}}}

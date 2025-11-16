@@ -1,5 +1,6 @@
 .gh-head {
     font-weight: 500;
+    background-color: var(--paper);
 }
 
 /* .gh-head-btn.gh-btn {
@@ -12,3 +13,17 @@
 /* .gh-head-btn.gh-btn:hover {
     opacity: 0.95;
 } */
+
+.theme-button {
+    display: flex; 
+    color: var(--ink);
+    width: 2.5rem; 
+    cursor: pointer; 
+    align-items: center; 
+    border-radius: 9999px; 
+    border-width: 1px; 
+    padding-left: 0px; 
+    transition-property: all; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition-duration: 300ms;
+}

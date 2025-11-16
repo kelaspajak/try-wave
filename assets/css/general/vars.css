@@ -1,12 +1,12 @@
 :root {
     --brand-color: var(--ghost-accent-color, #fc7e0f);
-    --primary-text-color: #5a656b;
+    --color-primary-text: #5a656b;
     --secondary-text-color: #aaa;
-    --white-color: #fff;
+    --color-white: #fff;
     --light-gray-color: #f6f6f6;
     --mid-gray-color: #e6e6e6;
     --dark-gray-color: #a8aab1;
-    --darker-gray-color: #1a1a1a;
+    --color-darker-gray: #1a1a1a;
     --black-color: #000;
     --animation-base: ease-in-out;
     --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -19,4 +19,16 @@
     :root {
         --header-spacing: 40px;
     }
+}
+
+[data-theme='dark'] {
+    --brand-color: var(--ghost-accent-color, #fc7e0f);
+    --color-primary-text: #e6e6e6;
+    --secondary-text-color: #777;
+    --color-white: #000;
+    --light-gray-color: #333;
+    --mid-gray-color: #444;
+    --dark-gray-color: #555;
+    --color-darker-gray: #eee;
+    --black-color: #fff;
 }
