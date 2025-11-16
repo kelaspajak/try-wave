@@ -2,7 +2,10 @@
 
 <div class="consultant-wrapper gh-outer">
     <header class="gh-article-header hero">
-        <h1 class="gh-article-title">Partner Kami</h1>
+        <p class="hero-tag">Partner Perpajakan Tepercaya</p>
+        <h1 class="gh-article-title">Temukan Partner Perpajakan Anda</h1>
+        <p class="hero-description">Direktori partner perpajakan dari berbagai kota yang siap membantu mengurus pajak Anda, baik secara online maupun tatap muka. Semua partner terverifikasi dan memiliki profil layanan yang jelas, sehingga Anda dapat memilih pendamping pajak yang tepat.</p>
+        <p class="hero-subheadline">Solusi perpajakan yang mudah, cepat, dan profesional melalui jaringan partner terpercaya di seluruh Indonesia.</p>
     </header>
 
     <aside class="consultant-sidebar">
@@ -128,8 +131,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
     .hero {
         grid-area: hero;
-        text-align: center; /* Center the title */
-        padding-bottom: 20px; /* Add some spacing below the hero */
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero-tag {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--ghost-accent-color);
+        margin-bottom: 10px;
+    }
+
+    .gh-article-title {
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto 20px;
+    }
+
+    .hero-subheadline {
+        font-size: 1rem;
+        font-style: italic;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .consultant-sidebar {
