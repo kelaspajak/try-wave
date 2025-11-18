@@ -1,6 +1,9 @@
 :root {
     --brand-color: var(--ghost-accent-color, #007bff);
 
+    --retro-2c: #566CEC;
+    --retro-2: linear-gradient(90.42deg, #4AB1F1 0.58%, #566CEC 37.22%, #D749AF 73.87%, #FF7C51 112.26%);
+
     /* Radix Gray Scale */
     --gray-1: #fcfcfc;
     --gray-2: #f8f8f8;
@@ -62,4 +65,16 @@
     --dark-gray-color: var(--gray-5);
     --color-darker-gray: var(--gray-12);
     --black-color: var(--gray-12);
+}
+
+.gradient {
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.retro-2 {
+    background-color: var(--retro-2c);
+    background-image: var(--retro-2);
 }

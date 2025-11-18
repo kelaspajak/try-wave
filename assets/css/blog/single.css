@@ -1,46 +1,56 @@
 .single .single-media .post-media {
-    margin: 0 auto 30px;
+	margin: 0 auto 30px;
 }
 
 .single > .post-header {
-    margin-bottom: 48px;
-    text-align: center;
+	margin-bottom: 48px;
+	text-align: center;
 }
 
 .page-template .single > .post-header {
-    margin-top: var(--header-spacing);
+	margin-top: var(--header-spacing);
 }
 
 .single > .post-header .post-title {
-    font-size: 4rem;
-    font-weight: 700;
+	font-size: 4rem;
+	font-weight: 700;
 }
 
 .single > .post-header .post-meta {
-    margin-bottom: 16px;
-    font-size: 1.3rem;
+	margin-bottom: 16px;
+	font-size: 1.3rem;
 }
 
 /* https://github.com/TryGhost/Dawn/ assets/css/blog/single.css */
 .single-cta {
-    padding: 3rem;
-    margin-top: 4rem !important;
-    text-align: center;
-    border-top: 5px solid var(--brand-color);
-    border-bottom: 1px solid var(--light-gray-color);
+	padding: 3rem;
+	margin-top: 4rem !important;
+	text-align: center;
+	border-top: 5px solid var(--brand-color);
+	border-bottom: 1px solid var(--light-gray-color);
 }
 
 .single-cta-title {
-    margin: 0 0 3rem !important;
+	margin: 0 0 3rem !important;
 }
 
 .single-cta-button {
-    margin-bottom: 1rem;
-    font-weight: 800 !important;
+	margin-bottom: 1rem;
+	font-weight: 800 !important;
 }
 
 .single-cta-footer {
-    font-size: 1.4rem;
-    font-weight: 400 !important;
-    letter-spacing: -0.02rem;
+	font-size: 1.4rem;
+	font-weight: 400 !important;
+	letter-spacing: -0.02rem;
+}
+
+.single-title {
+	margin-bottom: 0;
+	font-size: clamp(3rem, 2.273rem + 3.64vw, 5rem);
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -0.2rem;
+	word-break: break-word;
+	color: var(--gray-10);
 }

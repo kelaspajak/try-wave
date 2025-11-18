@@ -1,10 +1,27 @@
-<section class="author">
-    <div class="author-image-placeholder u-placeholder">
-        <img class="author-image u-object-fit" src="{{img_url profile_image size="xs"}}" alt="{{name}}" loading="lazy">
-    </div>
-    <div class="author-wrapper">
-        <header class="author-header">
-            <h4 class="author-name"><a href="{{url}}">{{name}}</a></h4>
+<section class="taxonomy gh-canvas">
+
+        {{#if profile_image}}
+            <div class="taxonomy-media u-placeholder square">
+                <img class="u-object-fit" src="{{img_url profile_image size="s"}}" alt="{{name}}">
+            </div>
+        {{/if}}
+
+        <header class="single-header">
+
+            {{#if website}}
+                <h1>
+                    <a class="single-title gradient retro-2" href="{{website}}" target="_blank" rel="noopener noreferrer">{{name}}</a>
+                </h1>
+            {{else}}
+                <h1 class="single-title gradient retro-2">{{name}}</h1>
+            {{/if}}
+
+            {{#if location}}
+                <span class="author-meta">{{location}}</span>
+            {{/if}}
+
+            <div class="author-bio">{{bio}}</div>
+
             <div class="author-social">
                 {{#if twitter}}
                     <a class="author-social-item author-twitter" href="{{social_url type="twitter"}}" target="_blank" rel="noopener noreferrer">
@@ -52,10 +69,31 @@
                     </a>
                 {{/if}}
             </div>
+
         </header>
-        {{#if location}}
-            <span class="author-meta">{{location}}</span>
-        {{/if}}
-        <div class="author-bio">{{bio}}</div>
-    </div>
-</section>
+
+    </section>
+
+    <style>
+        .taxonomy {
+    margin-bottom: 6vmin;
+}
+
+.taxonomy-media {
+    width: 90px;
+    margin: 0 auto 3rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.u-placeholder {
+    position: relative;
+    z-index: 10;
+    background-color: var(--gray-6);
+}
+
+.single-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+</style>
