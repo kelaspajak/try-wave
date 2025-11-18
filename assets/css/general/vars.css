@@ -1,5 +1,5 @@
 :root {
-    --brand-color: var(--ghost-accent-color, #fc7e0f);
+    --brand-color: var(--ghost-accent-color, #007bff);
 
     /* Radix Gray Scale */
     --gray-1: #fcfcfc;
@@ -15,7 +15,7 @@
     --gray-11: #6f6f6f;
     --gray-12: #171717;
 
-    --color-primary-text: #5a656b;
+    --color-primary-text: var(--gray-12);
     --secondary-text-color: var(--gray-11);
     --color-white: var(--gray-1);
     --light-gray-color: var(--gray-3);
@@ -38,7 +38,7 @@
 }
 
 [data-theme='dark'] {
-    --brand-color: var(--ghost-accent-color, #fc7e0f);
+    --brand-color: var(--ghost-accent-color, #007bff);
 
     /* Radix Gray Scale - Dark */
     --gray-1: #161616;

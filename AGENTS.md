@@ -1,4 +1,8 @@
 # Ghost Developer Docs
+## Ghost Integration
+Content API key=fb6787ec643d9d616f8d720f80
+Admin API key=691be7d672bb8f348973d44e:c953ddac33241141c9a002c9d286b7dfd4553b0a8535cced6596153a81710ce9
+API URL=http://localhost:2368/
 
 ## Docs
 
